@@ -1,21 +1,31 @@
 # Linux From Scratch 8.4
-![example](https://raw.githubusercontent.com/gabriel376/linux-from-scratch/master/8.4/lfs/example.jpg)
 
 ## Requirements
 * [Docker](https://docs.docker.com/install/)
 
 ## Usage
+### 1. Download Toolchain
 ```Shell
-# download toolchain
 wget --input-file=config/wget-list --continue --directory-prefix=toolchain/
 md5sum -c config/md5sums
-
-# build docker image
-docker build -t lfs:8.4 .
-
-# run docker container and build LFS
-bash scripts/custom/docker.sh
-
-# check iso image and logs
-ls -lha build
 ```
+
+### 2. Build Docker Image
+```Shell
+docker build -t lfs:8.4 .
+```
+
+### 3. Build LFS on Docker Container
+```Shell
+bash scripts/custom/docker.sh
+```
+![build example](https://raw.githubusercontent.com/gabriel376/linux-from-scratch/master/8.4/lfs/img/build.jpg)
+
+### 4. Check Build Artifacts
+```Shell
+tree -h build
+```
+![artifacts example](https://raw.githubusercontent.com/gabriel376/linux-from-scratch/master/8.4/lfs/img/artifacts.jpg)
+
+### 5. Boot LFS
+![boot example](https://raw.githubusercontent.com/gabriel376/linux-from-scratch/master/8.4/lfs/img/boot.jpg)
