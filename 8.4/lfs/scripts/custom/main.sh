@@ -101,7 +101,7 @@ run scripts/book/6.37-Gperf-3.1.sh
 run scripts/book/6.38-Expat-2.2.6.sh
 run scripts/book/6.39-Inetutils-1.9.4.sh
 run scripts/book/6.40-Perl-5.28.1.sh
-run scripts/book/6.41-XML::Parser-2.44.sh
+run scripts/book/6.41-XML-Parser-2.44.sh
 run scripts/book/6.42-Intltool-0.51.0.sh
 run scripts/book/6.43-Autoconf-2.69.sh
 run scripts/book/6.44-Automake-1.16.1.sh
