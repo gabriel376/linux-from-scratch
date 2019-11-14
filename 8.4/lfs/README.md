@@ -22,13 +22,18 @@ bash scripts/custom/docker.sh
 ```
 ![build example](https://raw.githubusercontent.com/gabriel376/linux-from-scratch/master/8.4/lfs/img/build.jpg)
 
-### 4. Check Build Artifacts
+### 4. Check Logs
+```Shell
+docker exec lfs-8.4 tail -f log.txt
+```
+
+### 5. Check Build Artifacts
 ```Shell
 tree -h build
 ```
 ![artifacts example](https://raw.githubusercontent.com/gabriel376/linux-from-scratch/master/8.4/lfs/img/artifacts.jpg)
 
-### 5. Boot LFS on VirtualBox
+### 6. Boot LFS on VirtualBox
 ```Shell
 bash scripts/custom/vm.sh [iso]
 ```
